@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 0 0 0;
+}
+
+.new-game{
+    display: block;
+    font-size: 1em;
+    margin: 15px 15px 15px 0; 
+    padding: 1em;
+    background-color: #ef5350; 
+    border-radius: 3px;
+    border: none;
+    color: $black-text;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.new-game:hover {
+    background-color: darken(#ef5350, 20%);
+}
+
+button.new-game:disabled {
+    background-color: $dark-grey;
+    color: $grey;
+}

@@ -6,33 +6,7 @@ import uuid from "uuid";
 
 class Scoreboard extends Component {
     state = {
-        players: [
-            {
-                name: 'Jake',
-                id: 123,
-                color: 'green',
-                score: 0
-                
-            },
-            {
-                name: 'Jake',
-                id: 123,
-                color: 'blue',
-                score: 0
-            },
-            {
-                name: 'Jake',
-                id: 123,
-                color: 'red',
-                score: 0
-            },
-            {
-                name: 'Jake',
-                id: 123,
-                color: 'yellow',
-                score: 0
-            }
-        ]
+        players: []
     };
 
     handleScoreChange = (index, scoreChange) => {
@@ -81,6 +55,9 @@ class Scoreboard extends Component {
         }
         return null;
     }
+    handleStartNewGame = () => {
+        this.setState({ players: [] });
+    }
 
     render() {
         const highScore = this.getHighScore();
@@ -106,6 +83,13 @@ class Scoreboard extends Component {
                         </section>
                         <AddPlayerForm addPlayer={this.handleAddPlayer} color={this.state.color}/>
                     </main>
+                    <footer>
+                        <button 
+                            onClick={this.handleStartNewGame}
+                            className="new-game"
+                            disabled={!this.state.players[0]}
+                        >Start New Game</button>
+                    </footer>
                 </div>
         );
     }
