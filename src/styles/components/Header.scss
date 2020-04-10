@@ -1,0 +1,19 @@
+header {
+    color: $black-text;
+    background-color: darken($white, 5%);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  
+    h1 {
+      flex-grow: 1;
+      font-family: 'Girassol', cursive;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      font-weight: normal;
+    }
+  }

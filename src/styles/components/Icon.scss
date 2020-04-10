@@ -1,0 +1,17 @@
+svg {
+    width: 28px;
+    height: 19px;
+    margin: 0 1rem;
+    fill: #F0F0F0;
+  }
+  
+  .is-high-score {
+    fill: #FFC657;
+    animation: grow 0.35s ease-in-out;
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes grow {
+    50% { transform: scale(1.4); }
+  }
+  

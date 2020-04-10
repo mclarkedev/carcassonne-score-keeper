@@ -1,0 +1,67 @@
+.player {
+  display: flex;
+  font-size: 1.5em;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-bottom: solid 1px darken($grey, 10%);
+  letter-spacing: 2px;
+}
+
+  .player:last-of-type {
+    border-bottom-color: $black-text;
+  }
+
+  .player-name:hover .remove-player {
+    color: $remove-red;
+  }
+
+  .player-name {
+    flex-grow: 1;
+    line-height: 3.5em;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &.green {
+      background-color: $green;
+      color: $white;
+    }
+  
+    &.red {
+      background-color: $red;
+      color: $white;
+    }
+  
+    &.blue {
+      background-color: $blue;
+      color: $white;
+    }
+  
+    &.black {
+      background-color: $black;
+      color: $white;
+    }
+  
+    &.yellow {
+      background-color: $yellow;
+      color: $black-text;
+    }
+
+    p {
+      display: inline;
+      margin: 0;
+      max-width: 5rem;
+    }
+  }
+
+  .remove-player {
+    font-size: 2em;
+    border: none;
+    outline: none;
+    color: $grey;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+  }

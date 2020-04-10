@@ -1,0 +1,54 @@
+form {
+    display: flex;
+    background-color: $dark-grey;
+  }
+  
+input[type=text] {
+  flex-grow: 1;
+  border-width: 0 0 1px 0;
+  margin: 1em .75em 1em 1em;
+  padding: .75em;
+  border-radius: 5px;
+  background-color: darken($grey, 10%);
+  border-style: none;
+  text-shadow: none;
+  text-transform: uppercase;
+  color: $black-text;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+input[type=text]::-webkit-input-placeholder{
+  color: $black-text;
+  letter-spacing: 2px;
+}
+
+input[type=text]:focus{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+select {
+  text-transform: uppercase;
+  margin: 1em .5em;
+  background-color: darken($grey, 10%);
+}
+
+.button[type=submit] {
+  display: block;
+  font-size: .6em;
+  margin: 15px 15px 15px 0; 
+  padding: 10px;
+  background-color: #83d97c; 
+  border-radius: 5px;
+  border: none;
+  color: $black-text;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button[type=submit]:hover {
+  background-color: darken(#83d97c, 20%);
+}
