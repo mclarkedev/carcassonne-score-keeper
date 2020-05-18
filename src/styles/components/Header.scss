@@ -16,4 +16,18 @@ header {
       letter-spacing: 2px;
       font-weight: normal;
     }
+
+    .stats {
+      background-color: darken($white, 10%);
+      text-align: left;
+      font-size: 1em;
+      padding: 1rem 1.87rem;
+    }
   }
+
+@media (max-width: 419px) {
+  header .stats {
+    flex-grow: 1;
+    text-align: center;
+  }
+}

@@ -52,3 +52,26 @@ select {
 .button[type=submit]:hover {
   background-color: darken(#83d97c, 20%);
 }
+
+@media (max-width: 449px) {
+  form {
+    flex-direction: column;
+    padding: 1em 3em;
+  }
+  
+  input[type=text], select, .button[type=submit] {
+    margin: 0;
+  }
+
+  input[type=text], select {
+    margin-bottom: 1.5em;
+  }
+
+  select {
+    height: 2em;
+  }
+
+  .button[type=submit] {
+    font-size: .8em;
+  }
+}

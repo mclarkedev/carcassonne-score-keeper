@@ -36,7 +36,7 @@ class AddPlayerForm extends Component {
                     onChange={this.handleSelectColor}
                 >
                     <option value="">--Player Color--</option>
-                    <option value="green" selected>Green</option>
+                    <option value="green">Green</option>
                     <option value="blue">Blue</option>
                     <option value="red">Red</option>
                     <option value="black">Black</option>
