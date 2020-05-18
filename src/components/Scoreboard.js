@@ -81,7 +81,7 @@ class Scoreboard extends Component {
                                 />
                             )}
                         </section>
-                        <AddPlayerForm addPlayer={this.handleAddPlayer} color={this.state.color}/>
+                        <AddPlayerForm addPlayer={this.handleAddPlayer} color={this.state.color} />
                     </main>
                     <footer>
                         <button 

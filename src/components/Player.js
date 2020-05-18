@@ -7,7 +7,7 @@ class Player extends PureComponent {
         const { name, id, color, score, index, removePlayer, changeScore } = this.props;
         return (
             <section className="player">
-                <div className={`player-name + ${color}`}>
+                <div className={`player-name ${color}`}>
                     <button
                         aria-label="Remove Player" 
                         className="remove-player" 

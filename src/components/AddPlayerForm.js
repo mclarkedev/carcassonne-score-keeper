@@ -10,12 +10,12 @@ class AddPlayerForm extends Component {
     };
     handleSelectColor = (e) => {
         this.setState({ color: e.target.value })
-    }
+    };
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.addPlayer(this.state);
         this.setState({ name: '', color: '' });
-    }
+    };
 
     render() {
         return (
@@ -25,17 +25,22 @@ class AddPlayerForm extends Component {
                     type="text"
                     value={this.state.name}
                     onChange={this.handleValueChange}
-                    placeholder="Enter a player's name"    
+                    placeholder="Enter a player's name"
                 />
 
-                <select required name="color" id="colors" value={this.state.color} onChange={this.handleSelectColor}>
-                    <optgroup label="Player Color">
-                        <option value="green">Green</option>
-                        <option value="blue">Blue</option>
-                        <option value="red">Red</option>
-                        <option value="black">Black</option>
-                        <option value="yellow">Yellow</option>
-                    </optgroup>
+                <select 
+                    required 
+                    name="color" 
+                    id="colors" 
+                    value={this.state.color} 
+                    onChange={this.handleSelectColor}
+                >
+                    <option value="">--Player Color--</option>
+                    <option value="green" selected>Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="red">Red</option>
+                    <option value="black">Black</option>
+                    <option value="yellow">Yellow</option>
                 </select>
 
                 <input
